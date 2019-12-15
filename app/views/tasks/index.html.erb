@@ -2,6 +2,8 @@
 
 <% @tasks.each do |task| %>
 
-  <h2><%= task.title %></h2>
+  <p>
+    <%= link_to task.title, task_path(task) %>
+  </p>
 
 <% end %>
