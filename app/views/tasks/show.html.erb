@@ -3,5 +3,6 @@
 <p class="details"><%= @task.details %></p>
 <p><%= @task.completed %></p>
 <div class="separator"></div>
-
+<%= link_to "Edit this task", edit_path(@task) %>
+<br>
 <%= link_to "< Back to tasks", tasks_path %>
